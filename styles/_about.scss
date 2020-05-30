@@ -1,0 +1,25 @@
+#about {
+  border-top-left-radius: 60vw;
+
+  //   -webkit-box-shadow: 0px 0px 20px 11px rgba(0, 0, 0, 0.09);
+  //   -moz-box-shadow: 0px 0px 20px 11px rgba(0, 0, 0, 0.09);
+  //   box-shadow: 0px 0px 20px 11px rgba(0, 0, 0, 0.09);
+  background: rgb(232, 233, 234);
+  position: relative;
+  text-align: center;
+  article {
+    z-index: -200;
+
+    width: 70vw;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 15vh;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+    header {
+      font-size: 2rem;
+      font-weight: 900;
+      padding-bottom: 2rem;
+    }
+  }
+}

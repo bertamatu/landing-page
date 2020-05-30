@@ -5,14 +5,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
   font-size: 100%;
   font-family: inherit;
   box-sizing: border-box;
+  color: rgb(68, 89, 100);
 }
-p {
+p,
+a {
   margin: 0;
   padding: 0;
+  color: rgb(68, 89, 100);
+}
+
+a:hover {
+  color: rgb(247, 38, 71);
+  transition: all 0.5s ease-in-out;
 }
 
 #home,
@@ -21,7 +29,24 @@ p {
 #contact {
   height: 100vh;
   width: 100vw;
+  z-index: -100;
 }
+.button {
+  font-size: 0.9rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: dotted 1px;
+  background-color: rgb(247, 38, 71);
+  color: white;
+  -webkit-box-shadow: 0px 47px 64px -6px rgba(68, 89, 100, 0.34);
+  -moz-box-shadow: 0px 47px 64px -6px rgba(68, 89, 100, 0.34);
+  box-shadow: 0px 47px 64px -6px rgba(68, 89, 100, 0.34);
+  &:hover {
+    color: black;
+  }
+}
+
 @import "./home";
 @import "./about";
 @import "./work";

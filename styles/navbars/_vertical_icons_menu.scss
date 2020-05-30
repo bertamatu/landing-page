@@ -10,7 +10,7 @@
   justify-content: center;
   text-align: center;
   width: 3.5rem;
-  border-right: 0.5px solid rgb(0, 0, 0);
+  border-right: 0.5px solid rgb(68, 89, 100);
   //web version
   @media only screen and (min-width: 768px) {
     width: 4rem;
@@ -18,7 +18,6 @@
   }
 }
 .vertical-menu a {
-  color: black;
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
@@ -26,10 +25,6 @@
   @media only screen and (min-width: 768px) {
     padding: 0.5rem 0.5rem;
   }
-}
-.vertical-menu a:hover {
-  color: red;
-  transition: all 0.2s ease-in-out;
 }
 .vertical-menu a:active {
   color: rgba(9, 170, 143, 0.9);

@@ -1,3 +1,48 @@
-p {
-  color: green;
+.topnav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  align-content: center;
+  justify-content: center;
+  z-index: 1;
+
+  a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .icon {
+    display: none;
+  }
+}
+
+//responsive toggle menu
+@media screen and (max-width: 600px) {
+  .topnav {
+    justify-content: right;
+  }
+  // .icon a {
+  // }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    display: flex;
+    flex-direction: row;
+  }
+  .topnav.responsive {
+    position: fixed;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
 }

@@ -1,10 +1,52 @@
 #home {
+  // border-bottom-right-radius: 20vw;
+  // -webkit-box-shadow: 0px 10px 23px 3px rgba(0, 0, 0, 0.12);
+  // -moz-box-shadow: 0px 10px 23px 3px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0px 10px 23px 3px rgba(0, 0, 0, 0.12);
+
   @import "./navbars/main_menu_top";
   @import "./navbars/vertical_icons_menu";
-  img {
-    height: 10rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
+  text-align: center;
+  .home_page_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    main {
+      font-size: 10rem;
+      font-weight: 900;
+      text-shadow: 2px 2px rgb(247, 38, 71);
+      p {
+        display: none;
+      }
+    }
+    aside {
+      text-align: right;
+      padding: 5rem 1rem;
+      img {
+        height: 50vh;
+      }
+      p {
+        margin-top: -5rem;
+        margin-bottom: -2vh;
+        font-size: 6rem;
+        font-weight: 900;
+        letter-spacing: -7px;
+      }
+      code {
+        color: rgb(247, 38, 71);
+        line-height: 1;
+        font-size: 1.2rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 100;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      main {
+        display: none;
+      }
+    }
   }
 }
