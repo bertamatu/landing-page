@@ -1,0 +1,38 @@
+//vertical icons MENU START
+.vertical-menu {
+  //mobile version
+  height: 70vh;
+  margin-top: 15vh;
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 3.5rem;
+  border-right: 0.5px solid rgb(0, 0, 0);
+  //web version
+  @media only screen and (min-width: 768px) {
+    width: 4rem;
+    padding: 0 2rem;
+  }
+}
+.vertical-menu a {
+  color: black;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  @media only screen and (min-width: 768px) {
+    padding: 0.5rem 0.5rem;
+  }
+}
+.vertical-menu a:hover {
+  color: red;
+  transition: all 0.2s ease-in-out;
+}
+.vertical-menu a:active {
+  color: rgba(9, 170, 143, 0.9);
+  transition: all 0.5s ease-in-out;
+}
+//vertical icons MENU END

@@ -1,9 +1,5 @@
 @import "./variables";
 @import "./mixins";
-@import "./home";
-@import "./about";
-@import "./work";
-@import "./contact";
 
 body {
   margin: 0;
@@ -26,3 +22,7 @@ p {
   height: 100vh;
   width: 100vw;
 }
+@import "./home";
+@import "./about";
+@import "./work";
+@import "./contact";

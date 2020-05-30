@@ -1,35 +1,10 @@
 #home {
+  @import "./navbars/main_menu_top";
+  @import "./navbars/vertical_icons_menu";
   img {
     height: 10rem;
     position: absolute;
     top: 40%;
     left: 50%;
   }
-  //vertical menu START
-  .vertical-menu {
-    height: 55vh;
-    position: fixed;
-    padding-top: 15rem;
-    width: 5rem;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: 5rem;
-    border-right: 0.5px solid rgb(0, 0, 0);
-  }
-  .vertical-menu a {
-    color: black;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-  .vertical-menu a:hover {
-    color: red;
-    transition: all 0.2s ease-in-out;
-  }
-  .vertical-menu a:active {
-    color: rgba(9, 170, 143, 0.9);
-    transition: all 0.5s ease-in-out;
-  }
 }
-//vertical menu END
