@@ -69,29 +69,24 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
+  background: white;
 }
 
 #home .topnav a {
   padding: 1rem;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-}
-
-#home .topnav .icon {
-  display: none;
 }
 
 @media screen and (max-width: 600px) {
   #home .topnav {
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: white;
   }
-  #home .topnav a:not(:first-child) {
-    display: none;
-  }
-  #home .topnav a.icon {
+  #home .topnav a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -99,23 +94,10 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  #home .topnav.responsive {
-    position: fixed;
-  }
-  #home .topnav.responsive,
-  #home .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  #home .topnav.responsive a {
-    float: none;
-    display: block;
-  }
-  #home .icon {
-    position: absolute;
-    right: 0;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    font-size: 0.8rem;
   }
 }
 
@@ -166,13 +148,12 @@ a:hover {
 
 #home .logo {
   color: #f72647;
+  padding: 1rem;
+  text-decoration: none;
   font-weight: 100;
   background-color: #e8e9ea;
   border-radius: 5px;
-  border-width: 80vw;
-  margin-bottom: 1rem;
-  position: relative;
-  left: 0;
+  margin-left: 1.5rem;
 }
 
 #home .home_page_content {
@@ -205,12 +186,24 @@ a:hover {
   height: 40vh;
 }
 
+@media only screen and (min-width: 768px) {
+  #home .home_page_content aside img {
+    height: 60vh;
+  }
+}
+
 #home .home_page_content aside p {
   margin-top: -5rem;
   margin-bottom: -2vh;
   font-size: 6rem;
   font-weight: 900;
   letter-spacing: -7px;
+}
+
+@media only screen and (min-width: 768px) {
+  #home .home_page_content aside p {
+    font-size: 10rem;
+  }
 }
 
 #home .home_page_content aside code {
@@ -254,9 +247,9 @@ a:hover {
 
 #about article {
   width: 60vw;
-  padding: 2rem;
+  padding: 1rem;
   text-align: justify;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   border-top-left-radius: 6vw;
   border-bottom-right-radius: 6vw;
   background: #445964;
@@ -305,23 +298,82 @@ a:hover {
   font-weight: 200;
 }
 
-#work article {
-  z-index: -900;
-  width: 60vw;
-  height: 50vh;
-  margin: 0 auto;
-  padding-top: 15rem;
+#work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#contact section {
-  width: 50vw;
+#work article {
+  width: 60vw;
   margin: 0 auto;
-  text-align: center;
-  padding-top: 30rem;
+  border: 1px solid;
+  padding: 2rem;
+  margin-top: 5rem;
+  border-top-left-radius: 9vw;
+  border-bottom-right-radius: 9vw;
+  -webkit-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 768px) {
+  #work article {
+    width: 30vw;
+    padding: 5rem;
+  }
+}
+
+#work article code {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+#work .article_joke {
+  background: #e4023e;
+  color: white;
+  border: 1px solid #e4023e;
+}
+
+#contact footer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contact iframe {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  margin-top: 2rem;
+  height: 30vh;
+  width: 70vw;
+  -webkit-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 768px) {
+  #contact iframe {
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

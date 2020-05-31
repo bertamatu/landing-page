@@ -1,11 +1,21 @@
 #contact {
-  section {
-    width: 50vw;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 30rem;
+  footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   iframe {
     filter: grayscale(100%);
+    margin-top: 2rem;
+    height: 30vh;
+    width: 70vw;
+    -webkit-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+    @media only screen and (min-width: 768px) {
+      height: 50vh;
+    }
   }
 }

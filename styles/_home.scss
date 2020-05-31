@@ -1,22 +1,15 @@
 #home {
-  // border-bottom-right-radius: 20vw;
-  // -webkit-box-shadow: 0px 10px 23px 3px rgba(0, 0, 0, 0.12);
-  // -moz-box-shadow: 0px 10px 23px 3px rgba(0, 0, 0, 0.12);
-  // box-shadow: 0px 10px 23px 3px rgba(0, 0, 0, 0.12);
-
   @import "./navbars/main_menu_top";
   @import "./navbars/vertical_icons_menu";
   text-align: center;
-
   .logo {
     color: rgb(247, 38, 71);
+    padding: 1rem;
+    text-decoration: none;
     font-weight: 100;
     background-color: rgb(232, 233, 234);
     border-radius: 5px;
-    border-width: 80vw;
-    margin-bottom: 1rem;
-    position: relative;
-    left: 0;
+    margin-left: 1.5rem;
   }
   .home_page_content {
     display: flex;
@@ -35,6 +28,9 @@
       padding: 5rem 1rem;
       img {
         height: 40vh;
+        @media only screen and (min-width: 768px) {
+          height: 60vh;
+        }
       }
       p {
         margin-top: -5rem;
@@ -42,6 +38,9 @@
         font-size: 6rem;
         font-weight: 900;
         letter-spacing: -7px;
+        @media only screen and (min-width: 768px) {
+          font-size: 10rem;
+        }
       }
       code {
         color: rgb(247, 38, 71);

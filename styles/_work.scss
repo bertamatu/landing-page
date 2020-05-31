@@ -1,9 +1,32 @@
 #work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 10rem;
   article {
-    z-index: -900;
     width: 60vw;
-    height: 50vh;
     margin: 0 auto;
-    padding-top: 15rem;
+    border: 1px solid;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-top-left-radius: 9vw;
+    border-bottom-right-radius: 9vw;
+    -webkit-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
+    @media only screen and (min-width: 768px) {
+      width: 30vw;
+      padding: 5rem;
+    }
+    code {
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+  }
+  .article_joke {
+    background: rgb(228, 2, 62);
+    color: white;
+    border: 1px solid rgb(228, 2, 62);
   }
 }
