@@ -16,10 +16,15 @@
     border-top-left-radius: 6vw;
     border-bottom-right-radius: 6vw;
     background: rgb(68, 89, 100);
-
     -webkit-box-shadow: 20px 29px 37px -10px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 20px 29px 37px -10px rgba(0, 0, 0, 0.18);
     box-shadow: 20px 29px 37px -10px rgba(0, 0, 0, 0.18);
+    @media only screen and (min-width: 768px) {
+      width: 30vw;
+      padding: 5rem;
+      border-top-left-radius: 9vw;
+      border-bottom-right-radius: 9vw;
+    }
 
     p {
       color: white;
@@ -28,9 +33,13 @@
     header {
       background: rgb(228, 2, 62);
       margin-bottom: 1rem;
-      padding: 1rem;
+      padding: 1.5rem;
       border-top-left-radius: 6vw;
       border-bottom-right-radius: 6vw;
+      @media only screen and (min-width: 768px) {
+        padding: 3rem;
+        font-size: 2rem;
+      }
       p {
         font-size: 0.8rem;
         font-weight: 800;
