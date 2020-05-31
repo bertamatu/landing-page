@@ -7,12 +7,13 @@
   align-content: center;
   justify-content: center;
   z-index: 1;
+  // background-color: rgb(232, 233, 234);
 
   a {
     padding: 1rem;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 100;
+    text-transform: uppercase;
   }
   .icon {
     display: none;
@@ -36,7 +37,8 @@
   .topnav.responsive {
     position: fixed;
   }
-  .topnav.responsive .icon {
+  .topnav.responsive,
+  .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -44,5 +46,9 @@
   .topnav.responsive a {
     float: none;
     display: block;
+  }
+  .icon {
+    position: absolute;
+    right: 0;
   }
 }

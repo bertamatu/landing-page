@@ -14,6 +14,7 @@ a {
   margin: 0;
   padding: 0;
   color: #445964;
+  z-index: -1;
 }
 
 a:hover {
@@ -28,7 +29,7 @@ a:hover {
 #contact {
   height: 100vh;
   width: 100vw;
-  z-index: -100;
+  z-index: -1000;
 }
 
 .button {
@@ -39,8 +40,8 @@ a:hover {
   border: dotted 1px;
   background-color: #f72647;
   color: white;
-  -webkit-box-shadow: 0px 47px 64px -6px rgba(68, 89, 100, 0.34);
-  box-shadow: 0px 47px 64px -6px rgba(68, 89, 100, 0.34);
+  -webkit-box-shadow: 0px 17px 25px -6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 17px 25px -6px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
@@ -74,7 +75,7 @@ a:hover {
   padding: 1rem;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 100;
+  text-transform: uppercase;
 }
 
 #home .topnav .icon {
@@ -102,7 +103,8 @@ a:hover {
   #home .topnav.responsive {
     position: fixed;
   }
-  #home .topnav.responsive .icon {
+  #home .topnav.responsive,
+  #home .icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -110,6 +112,10 @@ a:hover {
   #home .topnav.responsive a {
     float: none;
     display: block;
+  }
+  #home .icon {
+    position: absolute;
+    right: 0;
   }
 }
 
@@ -158,6 +164,17 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+#home .logo {
+  color: #f72647;
+  font-weight: 100;
+  background-color: #e8e9ea;
+  border-radius: 5px;
+  border-width: 80vw;
+  margin-bottom: 1rem;
+  position: relative;
+  left: 0;
+}
+
 #home .home_page_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +202,7 @@ a:hover {
 }
 
 #home .home_page_content aside img {
-  height: 50vh;
+  height: 40vh;
 }
 
 #home .home_page_content aside p {
@@ -220,31 +237,56 @@ a:hover {
 }
 
 #about {
-  border-top-left-radius: 60vw;
-  background: #e8e9ea;
-  position: relative;
+  border-radius: 3rem;
+  -webkit-box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about article {
-  z-index: -200;
-  width: 70vw;
-  margin: 0 auto;
+  width: 60vw;
+  padding: 2rem;
   text-align: justify;
-  padding-top: 15vh;
-  padding-bottom: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  border-top-left-radius: 6vw;
+  border-bottom-right-radius: 6vw;
+  background: #445964;
+  -webkit-box-shadow: 20px 29px 37px -10px rgba(0, 0, 0, 0.18);
+  box-shadow: 20px 29px 37px -10px rgba(0, 0, 0, 0.18);
+}
+
+#about article p {
+  color: white;
 }
 
 #about article header {
-  font-size: 2rem;
-  font-weight: 900;
-  padding-bottom: 2rem;
+  background: #e4023e;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-top-left-radius: 6vw;
+  border-bottom-right-radius: 6vw;
 }
 
-#work {
-  background: #e8e9ea;
-  border-bottom-right-radius: 60vw;
+#about article header p {
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#about article .wikipedia_link {
+  text-decoration: none;
+  background: #e4023e;
+  color: white;
+  font-weight: 200;
 }
 
 #work article {
@@ -260,5 +302,10 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   padding-top: 30rem;
+}
+
+#contact iframe {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 /*# sourceMappingURL=style.css.map */

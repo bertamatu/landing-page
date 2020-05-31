@@ -7,6 +7,17 @@
   @import "./navbars/main_menu_top";
   @import "./navbars/vertical_icons_menu";
   text-align: center;
+
+  .logo {
+    color: rgb(247, 38, 71);
+    font-weight: 100;
+    background-color: rgb(232, 233, 234);
+    border-radius: 5px;
+    border-width: 80vw;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 0;
+  }
   .home_page_content {
     display: flex;
     justify-content: space-around;
@@ -23,7 +34,7 @@
       text-align: right;
       padding: 5rem 1rem;
       img {
-        height: 50vh;
+        height: 40vh;
       }
       p {
         margin-top: -5rem;
