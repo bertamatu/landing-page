@@ -186,9 +186,9 @@ a:hover {
   height: 40vh;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 46.8em) {
   #home .home_page_content aside img {
-    height: 60vh;
+    height: 50vh;
   }
 }
 
@@ -263,6 +263,7 @@ a:hover {
     padding: 5rem;
     border-top-left-radius: 9vw;
     border-bottom-right-radius: 9vw;
+    font-size: 1rem;
   }
 }
 
@@ -271,7 +272,7 @@ a:hover {
 }
 
 #about article header {
-  background: #e4023e;
+  background: #f72647;
   margin-bottom: 1rem;
   padding: 1.5rem;
   border-top-left-radius: 6vw;
@@ -293,9 +294,22 @@ a:hover {
 
 #about article .wikipedia_link {
   text-decoration: none;
-  background: #e4023e;
   color: white;
   font-weight: 200;
+}
+
+.about_text {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: ease-in-out 1s all;
+  transition: ease-in-out 1s all;
+}
+
+.about_text_appear {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 #work {
@@ -315,7 +329,7 @@ a:hover {
 }
 
 #work article {
-  width: 60vw;
+  width: 50vw;
   margin: 0 auto;
   border: 1px solid;
   padding: 2rem;
@@ -345,30 +359,10 @@ a:hover {
 }
 
 #contact footer {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#contact footer .footer_button {
-  position: relative;
-  top: 15rem;
-  z-index: 2;
+  z-index: -1002;
 }
 
 #contact footer iframe {
-  z-index: -1001;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   height: 100vh;

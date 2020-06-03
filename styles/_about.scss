@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   article {
     width: 60vw;
     padding: 1rem;
@@ -24,12 +23,13 @@
       padding: 5rem;
       border-top-left-radius: 9vw;
       border-bottom-right-radius: 9vw;
+      font-size: 1rem;
     }
     p {
       color: white;
     }
     header {
-      background: rgb(228, 2, 62);
+      background: rgb(247, 38, 71);
       margin-bottom: 1rem;
       padding: 1.5rem;
       border-top-left-radius: 6vw;
@@ -46,9 +46,23 @@
     }
     .wikipedia_link {
       text-decoration: none;
-      background: rgb(228, 2, 62);
       color: white;
       font-weight: 200;
     }
+    // .about_button{
+    // }
   }
+}
+
+//classes for Js
+
+.about_text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: ease-in-out 1s all;
+}
+
+.about_text_appear {
+  opacity: 1;
+  transform: translateY(0);
 }

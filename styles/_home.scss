@@ -28,8 +28,8 @@
       padding: 5rem 1rem;
       img {
         height: 40vh;
-        @media only screen and (min-width: 768px) {
-          height: 60vh;
+        @media only screen and (min-width: $bp_med) {
+          height: 50vh;
         }
       }
       p {
