@@ -30,3 +30,14 @@
     border: 1px solid rgb(228, 2, 62);
   }
 }
+
+//classes for Js
+.work_text {
+  opacity: 0;
+  transform: translateX(-20vw);
+  transition: ease-in-out 1.2s all;
+}
+.work_text_appear {
+  opacity: 1;
+  transform: translateY(0);
+}

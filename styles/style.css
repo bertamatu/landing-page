@@ -300,10 +300,10 @@ a:hover {
 
 .about_text {
   opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  -webkit-transition: ease-in-out 1s all;
-  transition: ease-in-out 1s all;
+  -webkit-transform: translateX(30vw);
+          transform: translateX(30vw);
+  -webkit-transition: ease-in-out 1.3s all;
+  transition: ease-in-out 1.3s all;
 }
 
 .about_text_appear {
@@ -356,6 +356,20 @@ a:hover {
   background: #e4023e;
   color: white;
   border: 1px solid #e4023e;
+}
+
+.work_text {
+  opacity: 0;
+  -webkit-transform: translateX(-20vw);
+          transform: translateX(-20vw);
+  -webkit-transition: ease-in-out 1.2s all;
+  transition: ease-in-out 1.2s all;
+}
+
+.work_text_appear {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 #contact footer {

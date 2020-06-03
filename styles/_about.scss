@@ -55,13 +55,11 @@
 }
 
 //classes for Js
-
 .about_text {
   opacity: 0;
-  transform: translateY(30px);
-  transition: ease-in-out 1s all;
+  transform: translateX(30vw);
+  transition: ease-in-out 1.3s all;
 }
-
 .about_text_appear {
   opacity: 1;
   transform: translateY(0);
