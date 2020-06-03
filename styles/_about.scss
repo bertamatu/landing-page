@@ -5,11 +5,13 @@
   box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   article {
     width: 60vw;
     padding: 1rem;
+    margin-bottom: 2rem;
     text-align: justify;
     font-size: 0.75rem;
     border-top-left-radius: 6vw;
@@ -49,8 +51,6 @@
       color: white;
       font-weight: 200;
     }
-    // .about_button{
-    // }
   }
 }
 

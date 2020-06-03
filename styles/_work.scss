@@ -4,12 +4,22 @@
   justify-content: center;
   align-items: center;
   // margin-top: 10rem;
+  .work_intro_text {
+    width: 60vw;
+    font-size: 0.7rem;
+    text-align: justify;
+    @media only screen and (min-width: 768px) {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+  }
   article {
-    width: 50vw;
+    width: 45vw;
     margin: 0 auto;
     border: 1px solid;
     padding: 2rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     border-top-left-radius: 9vw;
     border-bottom-right-radius: 9vw;
     -webkit-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
@@ -20,7 +30,7 @@
       padding: 5rem;
     }
     code {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       font-weight: 100;
     }
   }

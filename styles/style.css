@@ -33,6 +33,7 @@ a:hover {
 }
 
 .button {
+  z-index: 1002;
   font-size: 0.9rem;
   padding: 1rem;
   text-decoration: none;
@@ -237,6 +238,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -248,6 +253,7 @@ a:hover {
 #about article {
   width: 60vw;
   padding: 1rem;
+  margin-bottom: 2rem;
   text-align: justify;
   font-size: 0.75rem;
   border-top-left-radius: 6vw;
@@ -328,12 +334,26 @@ a:hover {
           align-items: center;
 }
 
+#work .work_intro_text {
+  width: 60vw;
+  font-size: 0.7rem;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+  #work .work_intro_text {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+}
+
 #work article {
-  width: 50vw;
+  width: 45vw;
   margin: 0 auto;
   border: 1px solid;
   padding: 2rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
   border-top-left-radius: 9vw;
   border-bottom-right-radius: 9vw;
   -webkit-box-shadow: 10px 10px 38px -23px rgba(0, 0, 0, 0.75);
@@ -348,7 +368,7 @@ a:hover {
 }
 
 #work article code {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 100;
 }
 
